@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Sukhmanjot Singh — Graphics Design, Motion Graphics, Video Editing & VFX" />
+  <title>Portfolio | Sukhmanjot Singh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="loading-screen">
+    <div class="loader-logo">Sukhmanjot S.</div>
+    <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+    <div class="loader-text">Loading Portfolio</div>
+  </div>
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <div id="scroll-progress"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Sukhmanjot S<span style="color:var(--neon-green);">.</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation">
+        <div class="hamburger-icon"><span></span><span></span><span></span></div>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav gap-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero pt-5">
+    <div class="page-hero-title">PORTFOLIO</div>
+    <canvas id="particles-canvas"></canvas>
+    <div class="container page-hero-content" style="padding-top:120px;padding-bottom:60px;position:relative;z-index:2;">
+      <div class="section-label">My Work</div>
+      <h1 class="section-title" style="font-size:clamp(2.5rem,7vw,5.5rem);">Creative <span>Portfolio</span></h1>
+      <p class="section-subtitle">A curated collection of my finest creative work across all disciplines.</p>
+    </div>
+  </div>
+
+  <!-- FILTER + GRID -->
+  <section>
+    <div class="container">
+      <div class="filter-tabs justify-content-center" data-aos="fade-up">
+        <button class="filter-btn active" data-filter="all">All Work</button>
+        <button class="filter-btn" data-filter="graphics">Graphics Design</button>
+        <button class="filter-btn" data-filter="motion">Motion Graphics</button>
+        <button class="filter-btn" data-filter="vfx">VFX</button>
+        <button class="filter-btn" data-filter="anim">2D Animation</button>
+      </div>
+
+      <div class="row g-4" id="portfolio-grid">
+
+        <!-- GRAPHICS DESIGN -->
+        <div class="col-md-6 col-lg-4 portfolio-item" data-cat="graphics" data-aos="fade-up" data-aos-delay="0">
+          <div class="portfolio-card" data-lightbox="Images & video/Graphic design/Poster_page-0001.jpg" data-caption="Poster Design" style="cursor:pointer;">
+            <img src="Images & video/Graphic design/Poster_page-0001.jpg" alt="Poster Design" loading="lazy" />
+            <div class="portfolio-card-overlay">
+              <i class="fa-solid fa-expand" style="font-size:1.5rem;color:var(--neon-green);margin-bottom:10px;"></i>
+            </div>
+            <div class="portfolio-card-info">
+              <div class="portfolio-card-cat">Graphics Design</div>
+              <div class="portfolio-card-title">Poster Design</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 portfolio-item" data-cat="graphics" data-aos="fade-up" data-aos-delay="60">
+          <div class="portfolio-card" data-lightbox="Images & video/Graphic design/Visiting Card_page-0001.jpg" data-caption="Visiting Card Design" style="cursor:pointer;">
+            <img src="Images & video/Graphic design/Visiting Card_page-0001.jpg" alt="Visiting Card Design" loading="lazy" />
+            <div class="portfolio-card-overlay">
+              <i class="fa-solid fa-expand" style="font-size:1.5rem;color:var(--neon-green);margin-bottom:10px;"></i>
+            </div>
+            <div class="portfolio-card-info">
+              <div class="portfolio-card-cat">Graphics Design</div>
+              <div class="portfolio-card-title">Visiting Card Design</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 portfolio-item" data-cat="graphics" data-aos="fade-up" data-aos-delay="120">
+          <div class="portfolio-card" data-lightbox="Images & video/Graphic design/ID Card_page-0001.jpg" data-caption="ID Card Design" style="cursor:pointer;">
+            <img src="Images & video/Graphic design/ID Card_page-0001.jpg" alt="ID Card Design" loading="lazy" />
+            <div class="portfolio-card-overlay">
+              <i class="fa-solid fa-expand" style="font-size:1.5rem;color:var(--neon-green);margin-bottom:10px;"></i>
+            </div>
+            <div class="portfolio-card-info">
+              <div class="portfolio-card-cat">Graphics Design</div>
+              <div class="portfolio-card-title">ID Card Design</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 portfolio-item" data-cat="graphics" data-aos="fade-up" data-aos-delay="0">
+          <div class="portfolio-card" data-lightbox="Images & video/Graphic design/Envelope_page-0001.jpg" data-caption="Envelope Design" style="cursor:pointer;">
+            <img src="Images & video/Graphic design/Envelope_page-0001.jpg" alt="Envelope Design" loading="lazy" />
+            <div class="portfolio-card-overlay">
+              <i class="fa-solid fa-expand" style="font-size:1.5rem;color:var(--neon-green);margin-bottom:10px;"></i>
+            </div>
+            <div class="portfolio-card-info">
+              <div class="portfolio-card-cat">Graphics Design</div>
+              <div class="portfolio-card-title">Envelope Design</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 portfolio-item" data-cat="graphics" data-aos="fade-up" data-aos-delay="60">
+          <div class="portfolio-card" data-lightbox="Images & video/Graphic design/Workspace_page-0001.jpg" data-caption="Workspace Design" style="cursor:pointer;">
+            <img src="Images & video/Graphic design/Workspace_page-0001.jpg" alt="Workspace Design" loading="lazy" />
+            <div class="portfolio-card-overlay">
+              <i class="fa-solid fa-expand" style="font-size:1.5rem;color:var(--neon-green);margin-bottom:10px;"></i>
+            </div>
+            <div class="portfolio-card-info">
+              <div class="portfolio-card-cat">Graphics Design</div>
+              <div class="portfolio-card-title">Workspace Design</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 portfolio-item" data-cat="graphics" data-aos="fade-up" data-aos-delay="120">
+          <div class="portfolio-card" data-lightbox="Images & video/Graphic design/Self Potrait.jpg" data-caption="Self Potrait" style="cursor:pointer;">
+            <img src="Images & video/Graphic design/Self Potrait.jpg" alt="Character Design" loading="lazy" />
+            <div class="portfolio-card-overlay">
+              <i class="fa-solid fa-expand" style="font-size:1.5rem;color:var(--neon-green);margin-bottom:10px;"></i>
+            </div>
+            <div class="portfolio-card-info">
+              <div class="portfolio-card-cat">Graphics Design</div>
+              <div class="portfolio-card-title">Self Potrait</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MOTION GRAPHICS -->
+        <div class="col-md-6 col-lg-4 portfolio-item" 
+     data-cat="motion" 
+     data-aos="fade-up" 
+     data-aos-delay="0">
+
+  <a href="https://youtu.be/FJCpKJgjrSs?si=TXZU1mFkR3dZOvuA" target="_blank" style="text-decoration:none;">
+
+    <div class="portfolio-card" style="cursor:pointer;">
+
+      <img src="Images & video/Motion Graphics/ad-tb.jpeg"
+     alt="Advertisement"
+     style="width:100%;height:260px;object-fit:cover;" />
+
+      <div class="portfolio-card-overlay">
+        <i class="fa-solid fa-play"
+           style="font-size:1.5rem;color:var(--neon-green);margin-bottom:10px;"></i>
+      </div>
+
+      <div class="portfolio-card-info">
+        <div class="portfolio-card-cat">Motion Graphics</div>
+        <div class="portfolio-card-title">Advertisement</div>
+      </div>
+
+    </div>
+
+  </a>
+
+</div>
+
+        <div class="col-md-6 col-lg-4 portfolio-item" data-cat="motion" data-aos="fade-up" data-aos-delay="60">
+
+  <a href="https://youtu.be/Ce37ABPG9xc?si=iAuv6MpSwk2VOhaH" target="_blank" style="text-decoration:none;">
+
+    <div class="portfolio-card" style="cursor:pointer;">
+
+      <img src="Images & video/Motion Graphics/logo-tb.jpg" 
+     alt="Logo Animation"
+     style="width:100%;height:260px;object-fit:cover;" />
+
+      <div class="portfolio-card-overlay">
+        <i class="fa-solid fa-play"
+           style="font-size:1.5rem;color:var(--neon-green);margin-bottom:10px;"></i>
+      </div>
+
+      <div class="portfolio-card-info">
+        <div class="portfolio-card-cat">Motion Graphics</div>
+        <div class="portfolio-card-title">Logo Animation</div>
+      </div>
+
+    </div>
+
+  </a>
+
+</div>
+
+<!-- VFX -->
+<div class="col-md-6 col-lg-4 portfolio-item" data-cat="vfx" data-aos="fade-up" data-aos-delay="0">
+
+  <a href="https://youtu.be/WVwcMcXBiy4?si=Sx0zySI-UnZgy2gD" target="_blank" style="text-decoration:none;">
+
+    <div class="portfolio-card" style="cursor:pointer;">
+
+      <img src="Images & video/VFX/double-role-tb.jpeg" 
+     alt="Double Role Effect"
+     style="width:100%;height:260px;object-fit:cover;" />
+
+      <div class="portfolio-card-overlay">
+        <i class="fa-solid fa-play"
+           style="font-size:1.5rem;color:var(--neon-green);margin-bottom:10px;"></i>
+      </div>
+
+      <div class="portfolio-card-info">
+        <div class="portfolio-card-cat">VFX</div>
+        <div class="portfolio-card-title">Double Role Effect</div>
+      </div>
+
+    </div>
+
+  </a>
+
+</div>
+
+<div class="col-md-6 col-lg-4 portfolio-item" data-cat="vfx" data-aos="fade-up" data-aos-delay="60">
+
+  <a href="https://youtu.be/27S8qUi92YM?si=NiujgIv8Ik7UUXNb" target="_blank" style="text-decoration:none;">
+
+    <div class="portfolio-card" style="cursor:pointer;">
+
+      <img src="Images & video/VFX/paint-tb.jpeg" 
+     alt="Matte Painting"
+     style="width:100%;height:260px;object-fit:cover;" />
+
+      <div class="portfolio-card-overlay">
+        <i class="fa-solid fa-play"
+           style="font-size:1.5rem;color:var(--neon-green);margin-bottom:10px;"></i>
+      </div>
+
+      <div class="portfolio-card-info">
+        <div class="portfolio-card-cat">VFX</div>
+        <div class="portfolio-card-title">Matte Painting</div>
+      </div>
+
+    </div>
+
+  </a>
+
+</div>
+
+<div class="col-md-6 col-lg-4 portfolio-item" data-cat="vfx" data-aos="fade-up" data-aos-delay="120">
+
+  <a href="https://youtu.be/teuWJ8n3xtg?si=uElvSh56ShihBgcn" target="_blank" style="text-decoration:none;">
+
+    <div class="portfolio-card" style="cursor:pointer;">
+
+      <img src="Images & video/VFX/roto-tb.jpeg" 
+     alt="Rotoscoping"
+     style="width:100%;height:260px;object-fit:cover;" />
+
+      <div class="portfolio-card-overlay">
+        <i class="fa-solid fa-play"
+           style="font-size:1.5rem;color:var(--neon-green);margin-bottom:10px;"></i>
+      </div>
+
+      <div class="portfolio-card-info">
+        <div class="portfolio-card-cat">VFX</div>
+        <div class="portfolio-card-title">Rotoscoping</div>
+      </div>
+
+    </div>
+
+  </a>
+
+</div>
+
+        <!-- 2D ANIMATION -->
+        <div class="col-md-6 col-lg-4 portfolio-item" data-cat="anim" data-aos="fade-up" data-aos-delay="0">
+
+  <a href="https://www.behance.net/gallery/240877059/2D-Animation" target="_blank" style="text-decoration:none;">
+
+    <div class="portfolio-card" style="cursor:pointer;">
+
+      <img src="Images & video/2D Animation/bee-tb.jpg" 
+     alt="Bee Animation"
+     style="width:100%;height:260px;object-fit:cover;" />
+
+      <div class="portfolio-card-overlay">
+        <i class="fa-solid fa-play"
+           style="font-size:1.5rem;color:var(--neon-green);margin-bottom:10px;"></i>
+      </div>
+
+      <div class="portfolio-card-info">
+        <div class="portfolio-card-cat">2D Animation</div>
+        <div class="portfolio-card-title">Bee Animation</div>
+      </div>
+
+    </div>
+
+  </a>
+
+</div>
+
+<div class="col-md-6 col-lg-4 portfolio-item" data-cat="anim" data-aos="fade-up" data-aos-delay="60">
+
+  <a href="https://www.behance.net/gallery/240877059/2D-Animation" target="_blank" style="text-decoration:none;">
+
+    <div class="portfolio-card" style="cursor:pointer;">
+
+      <img src="Images & video/2D Animation/car-tb.jpg" 
+     alt="Car Animation"
+     style="width:100%;height:260px;object-fit:cover;" />
+
+      <div class="portfolio-card-overlay">
+        <i class="fa-solid fa-play"
+           style="font-size:1.5rem;color:var(--neon-green);margin-bottom:10px;"></i>
+      </div>
+
+      <div class="portfolio-card-info">
+        <div class="portfolio-card-cat">2D Animation</div>
+        <div class="portfolio-card-title">Car Animation</div>
+      </div>
+
+    </div>
+
+  </a>
+
+</div>
+
+<div class="col-md-6 col-lg-4 portfolio-item" data-cat="anim" data-aos="fade-up" data-aos-delay="120">
+
+  <a href="https://www.behance.net/gallery/240877059/2D-Animation" target="_blank" style="text-decoration:none;">
+
+    <div class="portfolio-card" style="cursor:pointer;">
+
+     <img src="Images & video/2D Animation/man-tb.jpg" 
+     alt="Man Walking Animation"
+     style="width:100%;height:260px;object-fit:cover;" />
+
+      <div class="portfolio-card-overlay">
+        <i class="fa-solid fa-play"
+           style="font-size:1.5rem;color:var(--neon-green);margin-bottom:10px;"></i>
+      </div>
+
+      <div class="portfolio-card-info">
+        <div class="portfolio-card-cat">2D Animation</div>
+        <div class="portfolio-card-title">Man Walking Animation</div>
+      </div>
+
+    </div>
+
+  </a>
+
+</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section>
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="section-label mx-auto" style="justify-content:center;">Testimonials</div>
+        <h2 class="section-title">Client <span>Reviews</span></h2>
+      </div>
+      <div class="swiper testimonial-swiper" data-aos="fade-up">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p class="testimonial-text">"Sukhmanjot delivered an outstanding logo design for our brand. His creativity, attention to detail, and responsiveness made the entire process seamless. Highly recommend!"</p>
+              <div class="d-flex align-items-center gap-3 mt-4">
+                <img src="https://i.pravatar.cc/150?img=1" alt="Client" class="testimonial-avatar" loading="lazy" />
+                <div>
+                  <div class="testimonial-name">Arjun Sharma</div>
+                  <div class="testimonial-role">Founder, ABCD Brand</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p class="testimonial-text">"Incredible motion graphics work! Sukhmanjot transformed our product video with stunning animations and visual effects. The quality exceeded our expectations completely."</p>
+              <div class="d-flex align-items-center gap-3 mt-4">
+                <img src="https://i.pravatar.cc/150?img=2" alt="Client" class="testimonial-avatar" loading="lazy" />
+                <div>
+                  <div class="testimonial-name">Priya Mehta</div>
+                  <div class="testimonial-role">Marketing Director</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+              <p class="testimonial-text">"Professional, creative, and delivers on time. Sukhmanjot's video editing skills are exceptional. He brought our YouTube channel to a whole new level of production quality."</p>
+              <div class="d-flex align-items-center gap-3 mt-4">
+                <img src="https://i.pravatar.cc/150?img=3" alt="Client" class="testimonial-avatar" loading="lazy" />
+                <div>
+                  <div class="testimonial-name">Rahul Verma</div>
+                  <div class="testimonial-role">YouTuber & Content Creator</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination testimonial-pagination mt-4"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container text-center py-3" data-aos="zoom-in">
+      <h2 class="section-title mb-4">Like What You <span>See?</span></h2>
+      <p class="section-subtitle mx-auto text-center mb-5">Let's collaborate on your next project and create something amazing together.</p>
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <a href="contact.html" class="btn-neon"><i class="fa-solid fa-envelope"></i> Hire Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <a href="index.html" class="footer-brand">Sukhmanjot Singh</a>
+          <p style="font-size:.88rem;color:var(--text-secondary);line-height:1.8;max-width:300px;margin-bottom:24px;">Creative Visual Designer crafting stunning visuals, motion graphics, and cinematic experiences.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/sukhmxnjot._.singh" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.behance.net/sukhmanjotsingh11"><i class="fa-brands fa-behance"></i></a>
+            <a href="https://www.youtube.com/@Souls_Creations"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 offset-lg-1">
+          <h6 style="letter-spacing:2px;font-size:.72rem;text-transform:uppercase;color:var(--text-muted);margin-bottom:20px;">Quick Links</h6>
+          <div class="footer-links">
+            <a href="index.html">Home</a><a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a><a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <h6 style="letter-spacing:2px;font-size:.72rem;text-transform:uppercase;color:var(--text-muted);margin-bottom:20px;">Categories</h6>
+          <div class="footer-links">
+            <a href="portfolio.html">Graphics Design</a><a href="portfolio.html">Motion Graphics</a>
+            <a href="portfolio.html">Video Editing</a><a href="portfolio.html">VFX Production</a>
+            <a href="portfolio.html">2D Animation</a>
+          </div>
+        </div>
+      </div>
+      <hr class="footer-divider" />
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
+        <p class="footer-copy mb-0">&copy; 2026 Sukhmanjot Singh. All Rights Reserved.</p>
+        <p class="footer-copy mb-0">Crafted with <span style="color:var(--neon-green);">♥</span> &amp; Passion</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scroll-top" title="Back to Top"><i class="fa-solid fa-chevron-up"></i></button>
+
+  <!-- Lightbox -->
+  <div id="lightbox">
+    <button id="lightbox-close">&times;</button>
+    <img id="lightbox-img" src="" alt="Preview" />
+    <video id="lightbox-vid" controls style="display:none;"></video>
+    <div id="lightbox-caption"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

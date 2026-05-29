@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sukhmanjot Singh — Creative Visual Designer | Graphics, Motion Graphics, VFX & Video Editing" />
+  <title>Sukhmanjot Singh | Creative Visual Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="loading-screen">
+    <div class="loader-logo">Sukhmanjot S.</div>
+    <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+    <div class="loader-text">Loading Portfolio</div>
+  </div>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <div id="scroll-progress"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Sukhmanjot S<span style="color:var(--neon-green);">.</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation">
+        <div class="hamburger-icon"><span></span><span></span><span></span></div>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav gap-1">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero-section" id="hero">
+    <div class="hero-video-bg">
+      <div class="hero-grid-lines"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <canvas id="particles-canvas"></canvas>
+    <div class="container hero-content text-center text-lg-start">
+      <div class="row justify-content-center justify-content-lg-start">
+        <div class="col-lg-8">
+          <div class="hero-badge">
+            <span class="dot"></span>Available for Freelance
+          </div>
+          <h1 class="hero-title">
+            <span class="line-1">Creative</span>
+            <span class="line-2">Visual Designer</span>
+          </h1>
+          <p class="hero-roles">
+            <span class="typed-text">Graphics Designer</span><span class="typed-cursor">|</span>
+          </p>
+          <div class="hero-cta">
+            <a href="portfolio.html" class="btn-neon"><i class="fa-solid fa-eye"></i> View Portfolio</a>
+            <a href="contact.html" class="btn-outline-neon"><i class="fa-solid fa-paper-plane"></i> Hire Me</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-socials">
+      <a href="https://www.instagram.com/sukhmxnjot._.singh" target="_blank" class="hero-social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" class="hero-social-link" title="Behance"><i class="fa-brands fa-behance"></i></a>
+      <a href="#" class="hero-social-link" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      <a href="#" class="hero-social-link" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-line"></div>
+      <div class="scroll-label">Scroll</div>
+    </div>
+  </section>
+
+  <!-- ABOUT BRIEF -->
+  <section id="about-brief">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5 text-center" data-aos="fade-right">
+          <div class="profile-img-wrap d-inline-block">
+            <img src="Images & video/2.jpeg" alt="Sukhmanjot Singh" class="img-fluid" style="border-radius:var(--radius-lg);" />
+          </div>
+        </div>
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="section-label">Who I Am</div>
+          <h2 class="section-title">Hello, I'm<br /><span>Sukhmanjot Singh</span></h2>
+          <p class="section-subtitle mb-4">
+            A passionate creative visual designer specializing in Graphics Design, Motion Graphics, 2D Animation, Video Editing &amp; VFX. I craft visual stories that captivate, inspire, and elevate brands through the power of design and motion.
+          </p>
+          <p class="mb-5" style="font-size: 0.9rem; line-height: 1.8; color: var(--text-secondary);">
+            With a deep love for the Adobe Creative Suite, I bring ideas to life — from stunning brand identities to cinematic motion graphics that leave a lasting impression. Every pixel, every frame, every second is crafted with intention and artistry.
+          </p>
+          <div class="row g-3">
+            <div class="col-6 col-md-3">
+              <div class="counter-card reveal">
+                <div class="counter-number" data-target="10" data-suffix="+">0</div>
+                <div class="counter-label">Projects</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="counter-card reveal">
+                <div class="counter-number" data-target="5" data-suffix="+">0</div>
+                <div class="counter-label">Clients</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="counter-card reveal">
+                <div class="counter-number" data-target="2">0</div>
+                <div class="counter-label">Awards</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="counter-card reveal">
+                <div class="counter-number" data-target="3" data-suffix="+">0</div>
+                <div class="counter-label">Years</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRAPHIC DESIGN SHOWCASE -->
+  <section class="section-dark py-5" style="padding: 80px 0 !important;">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="section-label mx-auto" style="justify-content:center;">Featured Work</div>
+        <h2 class="section-title">Graphic Design <span>Showcase</span></h2>
+      </div>
+      <div class="swiper showcase-swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="swiper-showcase-slide" data-lightbox="Images & video/Graphic design/Poster_page-0001.jpg" data-caption="Poster Design" style="cursor:pointer;">
+              <img src="Images & video/Graphic design/Poster_page-0001.jpg" alt="Poster Design" loading="lazy" />
+              <div class="swiper-slide-overlay">
+                <div>
+                  <div class="slide-cat">Graphics Design</div>
+                  <div class="slide-label">Poster Design</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-showcase-slide" data-lightbox="Images & video/Graphic design/Visiting Card_page-0001.jpg" data-caption="Visiting Card Design" style="cursor:pointer;">
+              <img src="Images & video/Graphic design/Visiting Card_page-0001.jpg" alt="Visiting Card" loading="lazy" />
+              <div class="swiper-slide-overlay">
+                <div>
+                  <div class="slide-cat">Graphics Design</div>
+                  <div class="slide-label">Visiting Card Design</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-showcase-slide" data-lightbox="Images & video/Graphic design/Workspace_page-0001.jpg" data-caption="Workspace Design" style="cursor:pointer;">
+              <img src="Images & video/Graphic design/Workspace_page-0001.jpg" alt="Workspace Design" loading="lazy" />
+              <div class="swiper-slide-overlay">
+                <div>
+                  <div class="slide-cat">Graphics Design</div>
+                  <div class="slide-label">Workspace Design</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-showcase-slide" data-lightbox="Images & video/Graphic design/Self Potrait.jpg" data-caption="Self Potrait" style="cursor:pointer;">
+              <img src="Images & video/Graphic design/Self Potrait.jpg" alt="Self Potrait" loading="lazy" />
+              <div class="swiper-slide-overlay">
+                <div>
+                  <div class="slide-cat">Graphics Design</div>
+                  <div class="slide-label">Self Potrait</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-showcase-slide" data-lightbox="Images & video/Graphic design/ID Card_page-0001.jpg" data-caption="ID Card Design" style="cursor:pointer;">
+              <img src="Images & video/Graphic design/ID Card_page-0001.jpg" alt="ID Card Design" loading="lazy" />
+              <div class="swiper-slide-overlay">
+                <div>
+                  <div class="slide-cat">Graphics Design</div>
+                  <div class="slide-label">ID Card Design</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-showcase-slide" data-lightbox="Images & video/Graphic design/Envelope_page-0001.jpg" data-caption="Envelope Design" style="cursor:pointer;">
+              <img src="Images & video/Graphic design/Envelope_page-0001.jpg" alt="Envelope Design" loading="lazy" />
+              <div class="swiper-slide-overlay">
+                <div>
+                  <div class="slide-cat">Graphics Design</div>
+                  <div class="slide-label">Envelope Design</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination mt-4"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="section-label mx-auto" style="justify-content:center;">Expertise</div>
+        <h2 class="section-title">Technical <span>Skills</span></h2>
+      </div>
+      <div class="row g-5">
+        <div class="col-lg-6" data-aos="fade-right">
+          <h5 class="mb-4" style="letter-spacing:2px;font-size:.8rem;text-transform:uppercase;color:var(--text-secondary);">Core Skills</h5>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-header"><span class="skill-bar-label">Graphics Design</span><span class="skill-bar-pct">90%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-header"><span class="skill-bar-label">Motion Graphics</span><span class="skill-bar-pct">80%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-header"><span class="skill-bar-label">Video Editing</span><span class="skill-bar-pct">85%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-header"><span class="skill-bar-label">VFX</span><span class="skill-bar-pct">90%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-header"><span class="skill-bar-label">2D Animation</span><span class="skill-bar-pct">92%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="92"></div></div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <h5 class="mb-4" style="letter-spacing:2px;font-size:.8rem;text-transform:uppercase;color:var(--text-secondary);">Software Proficiency</h5>
+          <div class="row g-3">
+            <div class="col-6 col-sm-4"><div class="software-card"><i class="fa-solid fa-pen-nib"></i><div class="software-card-name">Illustrator</div></div></div>
+            <div class="col-6 col-sm-4"><div class="software-card"><i class="fa-solid fa-image"></i><div class="software-card-name">Photoshop</div></div></div>
+            <div class="col-6 col-sm-4"><div class="software-card"><i class="fa-solid fa-file-alt"></i><div class="software-card-name">InDesign</div></div></div>
+            <div class="col-6 col-sm-4"><div class="software-card"><i class="fa-solid fa-play-circle"></i><div class="software-card-name">Animate</div></div></div>
+            <div class="col-6 col-sm-4"><div class="software-card"><i class="fa-solid fa-film"></i><div class="software-card-name">Premiere Pro</div></div></div>
+            <div class="col-6 col-sm-4"><div class="software-card"><i class="fa-solid fa-wand-magic-sparkles"></i><div class="software-card-name">After Effects</div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section class="section-dark" id="achievements">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="section-label mx-auto" style="justify-content:center;">Recognition</div>
+        <h2 class="section-title">My <span>Achievements</span></h2>
+      </div>
+      <div class="row justify-content-center g-4">
+        <div class="col-md-5" data-aos="fade-up" data-aos-delay="0">
+          <div class="achievement-card text-center">
+            <span class="achievement-icon"><i class="fa-solid fa-trophy"></i></span>
+            <h4 class="mb-3">Best Student Award</h4>
+            <p style="color:var(--text-secondary);font-size:.9rem;line-height:1.7;">Recognized as the most outstanding student for exceptional creativity, consistent excellence, and dedication to the craft of design and multimedia arts.</p>
+          </div>
+        </div>
+        <div class="col-md-5" data-aos="fade-up" data-aos-delay="120">
+          <div class="achievement-card text-center">
+            <span class="achievement-icon"><i class="fa-solid fa-star"></i></span>
+            <h4 class="mb-3">Emerging Graphics Designer Award</h4>
+            <p style="color:var(--text-secondary);font-size:.9rem;line-height:1.7;">Awarded for demonstrating exceptional promise and innovative thinking in the field of graphic design, motion graphics, and visual storytelling.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" id="cta">
+    <div class="container text-center py-3" data-aos="zoom-in">
+      <h2 class="section-title mb-4">Let's Create Something<br /><span>Extraordinary</span></h2>
+      <p class="section-subtitle mx-auto text-center mb-5">Have a project in mind? Let's collaborate and turn your vision into stunning reality.</p>
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <a href="contact.html" class="btn-neon"><i class="fa-solid fa-envelope"></i> Contact Me</a>
+        <a href="about.html" class="btn-glass"><i class="fa-solid fa-user"></i> Know More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <a href="index.html" class="footer-brand">Sukhmanjot Singh</a>
+          <p style="font-size:.88rem;color:var(--text-secondary);line-height:1.8;max-width:300px;margin-bottom:24px;">Creative Visual Designer crafting stunning visuals, motion graphics, and cinematic experiences.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/sukhmxnjot._.singh" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.behance.net/sukhmanjotsingh11" title="Behance"><i class="fa-brands fa-behance"></i></a>
+            <a href="https://www.youtube.com/@Souls_Creations" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-2 offset-lg-2">
+          <h6 style="letter-spacing:2px;font-size:.72rem;text-transform:uppercase;color:var(--text-muted);margin-bottom:20px;">Quick Links</h6>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <h6 style="letter-spacing:2px;font-size:.72rem;text-transform:uppercase;color:var(--text-muted);margin-bottom:20px;">Services</h6>
+          <div class="footer-links">
+            <a href="portfolio.html">Graphics Design</a>
+            <a href="portfolio.html">Motion Graphics</a>
+            <a href="portfolio.html">Video Editing</a>
+            <a href="portfolio.html">VFX Production</a>
+            <a href="portfolio.html">2D Animation</a>
+          </div>
+        </div>
+      </div>
+      <hr class="footer-divider" />
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
+        <p class="footer-copy mb-0">&copy; 2026 Sukhmanjot Singh. All Rights Reserved.</p>
+        <p class="footer-copy mb-0">Crafted with <span style="color:var(--neon-green);">♥</span> &amp; Passion</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scroll-top" title="Back to Top"><i class="fa-solid fa-chevron-up"></i></button>
+
+  <!-- Lightbox -->
+  <div id="lightbox">
+    <button id="lightbox-close">&times;</button>
+    <img id="lightbox-img" src="" alt="Preview" />
+    <video id="lightbox-vid" controls style="display:none;"></video>
+    <div id="lightbox-caption"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>
+    // Init showcase swiper with click-to-lightbox
+    window.addEventListener("load", () => {
+      if (typeof Swiper === "undefined") return;
+      new Swiper(".showcase-swiper", {
+        loop: true, autoplay: { delay: 3500, disableOnInteraction: false },
+        slidesPerView: 1,
+        breakpoints: { 768: { slidesPerView: 2, spaceBetween: 24 }, 1200: { slidesPerView: 3, spaceBetween: 28 } },
+        spaceBetween: 20,
+        pagination: { el: ".swiper-pagination", clickable: true },
+        speed: 800,
+      });
+    });
+    // Add lightbox click to showcase slides
+    document.querySelectorAll(".swiper-showcase-slide[data-lightbox]").forEach(el => {
+      el.addEventListener("click", () => {
+        const lb = document.getElementById("lightbox");
+        const lbImg = document.getElementById("lightbox-img");
+        const lbCap = document.getElementById("lightbox-caption");
+        if (lbImg) { lbImg.style.display = "block"; lbImg.src = el.dataset.lightbox; }
+        if (lbCap) lbCap.textContent = el.dataset.caption || "";
+        if (lb) { lb.classList.add("active"); document.body.style.overflow = "hidden"; }
+      });
+    });
+  </script>
+</body>
+</html>

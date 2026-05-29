@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About Sukhmanjot Singh — Creative Visual Designer | Graphics, Motion Graphics, VFX & Video Editing" />
+  <title>About | Sukhmanjot Singh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="loading-screen">
+    <div class="loader-logo">Sukhmanjot S.</div>
+    <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+    <div class="loader-text">Loading</div>
+  </div>
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <div id="scroll-progress"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Sukhmanjot S<span style="color:var(--neon-green);">.</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation">
+        <div class="hamburger-icon"><span></span><span></span><span></span></div>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav gap-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero pt-5">
+    <div class="page-hero-title">ABOUT</div>
+    <canvas id="particles-canvas"></canvas>
+    <div class="container page-hero-content" style="padding-top:120px;padding-bottom:60px;position:relative;z-index:2;">
+      <div class="section-label">My Story</div>
+      <h1 class="section-title" style="font-size:clamp(2.5rem,7vw,5.5rem);">About <span>Me</span></h1>
+    </div>
+  </div>
+
+  <!-- INTRO -->
+  <section>
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="profile-img-wrap d-inline-block w-100">
+            <img src="Images & video/2.jpeg" alt="Sukhmanjot Singh" class="img-fluid w-100" style="border-radius:var(--radius-lg);" />
+          </div>
+        </div>
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="section-label">Introduction</div>
+          <h2 class="section-title">Sukhmanjot <span>Singh</span></h2>
+          <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px;">
+            <span style="padding:6px 16px;border-radius:50px;background:rgba(0,255,136,.1);border:1px solid rgba(0,255,136,.2);font-size:.72rem;letter-spacing:1.5px;color:var(--neon-green);text-transform:uppercase;">Graphics Designer</span>
+            <span style="padding:6px 16px;border-radius:50px;background:rgba(168,85,247,.1);border:1px solid rgba(168,85,247,.2);font-size:.72rem;letter-spacing:1.5px;color:var(--neon-purple);text-transform:uppercase;">Motion Graphics Artist</span>
+            <span style="padding:6px 16px;border-radius:50px;background:rgba(0,229,255,.1);border:1px solid rgba(0,229,255,.2);font-size:.72rem;letter-spacing:1.5px;color:var(--neon-cyan);text-transform:uppercase;">VFX Artist</span>
+            <span style="padding:6px 16px;border-radius:50px;background:rgba(0,255,136,.1);border:1px solid rgba(0,255,136,.2);font-size:.72rem;letter-spacing:1.5px;color:var(--neon-green);text-transform:uppercase;">Video Editor</span>
+            <span style="padding:6px 16px;border-radius:50px;background:rgba(168,85,247,.1);border:1px solid rgba(168,85,247,.2);font-size:.72rem;letter-spacing:1.5px;color:var(--neon-purple);text-transform:uppercase;">2D Animator</span>
+          </div>
+          <p class="section-subtitle mb-4">
+            A creative soul dedicated to the art of visual communication. My journey in design began with a fascination for how visuals can evoke emotion, tell stories, and transform brands.
+          </p>
+          <p style="color:var(--text-secondary);font-size:.9rem;line-height:1.9;margin-bottom:36px;">
+            I specialize in creating immersive visual experiences — from clean brand identities and stunning social media graphics to cinematic motion pieces and complex VFX sequences. My toolkit is the Adobe Creative Suite, and every project I take on is an opportunity to push creative boundaries and deliver something truly extraordinary.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="contact.html" class="btn-neon"><i class="fa-solid fa-paper-plane"></i> Hire Me</a>
+            <a href="portfolio.html" class="btn-glass"><i class="fa-solid fa-eye"></i> View My Work</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="section-dark">
+    <div class="container">
+      <div class="row g-4 text-center">
+        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="0">
+          <div class="counter-card">
+            <div class="counter-number" data-target="10" data-suffix="+">0</div>
+            <div class="counter-label">Projects Completed</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="80">
+          <div class="counter-card">
+            <div class="counter-number" data-target="5" data-suffix="+">0</div>
+            <div class="counter-label">Happy Clients</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="160">
+          <div class="counter-card">
+            <div class="counter-number" data-target="2">0</div>
+            <div class="counter-label">Awards Won</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="240">
+          <div class="counter-card">
+            <div class="counter-number" data-target="6">0</div>
+            <div class="counter-label">Software Tools</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION + EXPERIENCE -->
+  <section>
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="section-label">Education</div>
+          <h2 class="section-title mb-4">Academic <span>Qualification</span></h2>
+          <div class="qual-card">
+            <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
+              <div>
+                <div class="qual-degree">12th Grade (Senior Secondary)</div>
+                <div class="qual-inst">Commerce Stream</div>
+              </div>
+              <span class="qual-year">75% — 2025</span>
+            </div>
+          </div>
+
+          <div class="mt-5">
+            <div class="section-label">Journey</div>
+            <h3 class="mb-4" style="font-weight:700;">Creative <span style="background:linear-gradient(135deg,var(--neon-green),var(--neon-purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Journey</span></h3>
+            <p style="color:var(--text-secondary);font-size:.9rem;line-height:1.9;">
+              My creative journey started as a passion project — experimenting with Photoshop, learning typography, and eventually discovering the world of motion design through After Effects. What began as a hobby quickly evolved into a professional skill set that spans the full Adobe Creative Suite. Every project I undertake is fueled by curiosity, dedication, and a relentless pursuit of visual excellence.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="section-label">Experience</div>
+          <h2 class="section-title mb-4">Freelance <span>Experience</span></h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2026</div>
+              <div class="timeline-title">Freelance Logo Design — ABCD Brand</div>
+              <div class="timeline-desc">Designed a complete brand identity for ABCD Brand including primary logo, color palette, typography system, and brand guidelines. Delivered multiple logo variants optimized for print and digital media.</div>
+            </div>
+          </div>
+
+          <div class="mt-5">
+            <div class="section-label">Recognition</div>
+            <h3 class="mb-4" style="font-weight:700;">Awards <span style="background:linear-gradient(135deg,var(--neon-green),var(--neon-purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Timeline</span></h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot" style="background:var(--neon-green);box-shadow:var(--glow-green);"></div>
+                <div class="timeline-date">2025</div>
+                <div class="timeline-title"><i class="fa-solid fa-trophy me-2" style="color:var(--neon-green);"></i>Best Student Award</div>
+                <div class="timeline-desc">Awarded for exceptional performance, creativity, and outstanding contribution to the design department.</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot" style="background:var(--neon-purple);box-shadow:var(--glow-purple);"></div>
+                <div class="timeline-date">2026</div>
+                <div class="timeline-title"><i class="fa-solid fa-star me-2" style="color:var(--neon-purple);"></i>Emerging Graphics Designer Award</div>
+                <div class="timeline-desc">Recognized as an emerging talent in the field of graphic design for innovative work and creative problem-solving skills.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECHNICAL SKILLS -->
+  <section class="section-dark">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="section-label mx-auto" style="justify-content:center;">Proficiency</div>
+        <h2 class="section-title">Technical <span>Qualification</span></h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-6" data-aos="fade-right">
+          <h5 class="mb-4" style="letter-spacing:2px;font-size:.8rem;text-transform:uppercase;color:var(--text-secondary);">Skills Proficiency</h5>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-header"><span class="skill-bar-label">Graphics Design</span><span class="skill-bar-pct">90%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-header"><span class="skill-bar-label">Motion Graphics</span><span class="skill-bar-pct">80%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-header"><span class="skill-bar-label">Video Editing</span><span class="skill-bar-pct">85%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-header"><span class="skill-bar-label">VFX</span><span class="skill-bar-pct">90%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-header"><span class="skill-bar-label">2D Animation</span><span class="skill-bar-pct">92%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="92"></div></div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <h5 class="mb-4" style="letter-spacing:2px;font-size:.8rem;text-transform:uppercase;color:var(--text-secondary);">Adobe Suite Expertise</h5>
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="software-card d-flex align-items-center gap-3 text-start" style="padding:18px 20px;">
+                <i class="fa-solid fa-pen-nib" style="font-size:1.5rem;flex-shrink:0;"></i>
+                <div><div class="software-card-name">Illustrator</div><div style="font-size:.7rem;color:var(--text-muted);">Vector Design</div></div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="software-card d-flex align-items-center gap-3 text-start" style="padding:18px 20px;">
+                <i class="fa-solid fa-image" style="font-size:1.5rem;flex-shrink:0;"></i>
+                <div><div class="software-card-name">Photoshop</div><div style="font-size:.7rem;color:var(--text-muted);">Photo Editing</div></div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="software-card d-flex align-items-center gap-3 text-start" style="padding:18px 20px;">
+                <i class="fa-solid fa-file-alt" style="font-size:1.5rem;flex-shrink:0;"></i>
+                <div><div class="software-card-name">InDesign</div><div style="font-size:.7rem;color:var(--text-muted);">Layout Design</div></div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="software-card d-flex align-items-center gap-3 text-start" style="padding:18px 20px;">
+                <i class="fa-solid fa-play-circle" style="font-size:1.5rem;flex-shrink:0;"></i>
+                <div><div class="software-card-name">Animate</div><div style="font-size:.7rem;color:var(--text-muted);">2D Animation</div></div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="software-card d-flex align-items-center gap-3 text-start" style="padding:18px 20px;">
+                <i class="fa-solid fa-film" style="font-size:1.5rem;flex-shrink:0;"></i>
+                <div><div class="software-card-name">Premiere Pro</div><div style="font-size:.7rem;color:var(--text-muted);">Video Editing</div></div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="software-card d-flex align-items-center gap-3 text-start" style="padding:18px 20px;">
+                <i class="fa-solid fa-wand-magic-sparkles" style="font-size:1.5rem;flex-shrink:0;"></i>
+                <div><div class="software-card-name">After Effects</div><div style="font-size:.7rem;color:var(--text-muted);">Motion & VFX</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container text-center py-3" data-aos="zoom-in">
+      <h2 class="section-title mb-4">Ready to <span>Collaborate?</span></h2>
+      <p class="section-subtitle mx-auto text-center mb-5">Let's build something extraordinary together. I'm available for freelance projects.</p>
+      <a href="contact.html" class="btn-neon"><i class="fa-solid fa-envelope"></i> Get In Touch</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <a href="index.html" class="footer-brand">Sukhmanjot Singh</a>
+          <p style="font-size:.88rem;color:var(--text-secondary);line-height:1.8;max-width:300px;margin-bottom:24px;">Creative Visual Designer crafting stunning visuals, motion graphics, and cinematic experiences.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/sukhmxnjot._.singh" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.behance.net/sukhmanjotsingh11"><i class="fa-brands fa-behance"></i></a>
+            <a href="https://www.youtube.com/@Souls_Creations"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 offset-lg-1">
+          <h6 style="letter-spacing:2px;font-size:.72rem;text-transform:uppercase;color:var(--text-muted);margin-bottom:20px;">Quick Links</h6>
+          <div class="footer-links">
+            <a href="index.html">Home</a><a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a><a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <h6 style="letter-spacing:2px;font-size:.72rem;text-transform:uppercase;color:var(--text-muted);margin-bottom:20px;">Services</h6>
+          <div class="footer-links">
+            <a href="portfolio.html">Graphics Design</a><a href="portfolio.html">Motion Graphics</a>
+            <a href="portfolio.html">Video Editing</a><a href="portfolio.html">VFX Production</a>
+            <a href="portfolio.html">2D Animation</a>
+          </div>
+        </div>
+      </div>
+      <hr class="footer-divider" />
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
+        <p class="footer-copy mb-0">&copy; 2026 Sukhmanjot Singh. All Rights Reserved.</p>
+        <p class="footer-copy mb-0">Crafted with <span style="color:var(--neon-green);">♥</span> &amp; Passion</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scroll-top" title="Back to Top"><i class="fa-solid fa-chevron-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
